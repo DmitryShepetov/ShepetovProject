@@ -1,0 +1,11 @@
+@use '/node_modules/@angular/material/' as mat;
+
+$sp-pink-primary: mat.define-palette(mat.$pink-palette, 400);
+$sp-pink-accent: mat.define-palette(mat.$deep-purple-palette, A200);
+$sp-pink-warn: mat.define-palette(mat.$red-palette, 600);
+
+$sp-pink-theme: mat.define-light-theme(
+  $sp-pink-primary,
+  $sp-pink-accent,
+  $sp-pink-warn
+);

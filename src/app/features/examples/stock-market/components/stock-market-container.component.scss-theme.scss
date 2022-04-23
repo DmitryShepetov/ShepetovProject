@@ -1,0 +1,19 @@
+@use '/node_modules/@angular/material/' as mat;
+
+@mixin sp-stock-market-container-component-theme($theme) {
+  $warn: map-get($theme, warn);
+
+  sp-stock-market {
+    mat-card {
+      .negative {
+        color: mat.get-color-from-palette($warn);
+      }
+    }
+
+    .error-state {
+      fa-icon {
+        color: mat.get-color-from-palette($warn);
+      }
+    }
+  }
+}

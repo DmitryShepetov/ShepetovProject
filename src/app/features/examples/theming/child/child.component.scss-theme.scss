@@ -1,0 +1,15 @@
+@use '/node_modules/@angular/material/' as mat;
+
+@mixin sp-child-component-theme($theme) {
+  $warn: map-get($theme, warn);
+
+  sp-child {
+    > div {
+      border-color: mat.get-color-from-palette($warn);
+
+      > h2 {
+        color: mat.get-color-from-palette($warn);
+      }
+    }
+  }
+}

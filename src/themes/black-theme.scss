@@ -1,0 +1,11 @@
+@use '/node_modules/@angular/material' as mat;
+
+$sp-black-primary: mat.define-palette(mat.$grey-palette, 700, 300, 900);
+$sp-black-accent: mat.define-palette(mat.$blue-grey-palette, 400);
+$sp-black-warn: mat.define-palette(mat.$red-palette, 500);
+
+$sp-black-theme: mat.define-dark-theme(
+  $sp-black-primary,
+  $sp-black-accent,
+  $sp-black-warn
+);

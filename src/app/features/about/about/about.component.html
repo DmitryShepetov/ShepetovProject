@@ -1,0 +1,76 @@
+<div class="background">
+  <div class="gradient">
+    <div class="container">
+      <h1>{{ 'sp.title.long' | translate }}</h1>
+      <div class="actions">
+        <a [ngClass]="routeAnimationsElements" mat-raised-button class="actions-main" color="primary" routerLink="../feature-list">
+          {{ 'sp.menu.features' | translate }}
+        </a>
+        <a mat-raised-button class="actions-main" color="accent" routerLink="../examples" [ngClass]="routeAnimationsElements">
+          {{ 'sp.menu.examples' | translate }}
+        </a>
+        <a mat-raised-button class="actions-main" color="warn" routerLink="../settings" [ngClass]="routeAnimationsElements">
+          {{ 'sp.about.change-theme' | translate }}
+        </a>
+        <a mat-raised-button class="actions-main" color="accent" [ngClass]="routeAnimationsElements" href="https://t.me/rksjsud">
+          <fa-icon [icon]="['fab','telegram']"></fa-icon>
+          Telegram
+        </a>
+        <br>
+      </div>
+      <div class="get-started" [ngClass]="routeAnimationsElements">
+        <h2 rtl>{{ 'sp.about.get-started' | translate }}</h2>
+        <code>git clone
+          https://github.com/DmitryShepetov/ShepetovProject
+          new-project</code><br>
+        <code>cd new-project</code><br>
+        <code>npm install</code><br>
+        <code>npm start</code>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="follow-releases" [ngClass]="routeAnimationsElements">
+    <h2 rtl>{{ 'sp.about.get-notified.title' | translate }}</h2>
+    <p rtl>
+      {{ 'sp.about.get-notified.description' | translate }}
+      <fa-icon icon="face-smile"></fa-icon>
+    </p>
+
+  </div>
+</div>
+<div class="container" rtl>
+  <div class="contributors" [ngClass]="routeAnimationsElements">
+    <h2>{{ 'sp.about.contributors.title' | translate }}</h2>
+    <div class="resume-header-title">
+      <br>
+      <div><h3>Shepetov Dmitry Vitalievich</h3>
+        <div></div>
+      </div><p><span>Male</span>, <span></span>born on&nbsp;<span>6&nbsp;November&nbsp;2002</span></p><div class="resume-header-field">
+        <div class="bloko-height_two bloko-text">Contacts</div>
+        <span class="bloko-text">Phone</span><br>
+        <span>+375 (29) 198-00-67</span>
+      </div>
+    </div>
+    <div class="bloko-text">
+      <span>Email</span>
+    </div>
+    <span>likverxmakk@mail.ru</span>
+    <div>
+      <span class="bloko-text bloko-height_two">Location</span><br><span>Minsk</span>, willing to relocate, prepared for business trips
+    </div>
+    <div>
+      <span class="bloko-text">Employment</span><br>
+      <span>Full time</span><br>
+      <span class="bloko-text">Work schedule</span><br>
+      <span>Remote working, flexible schedule, full day</span>
+    </div>
+    <br><span class="bloko-height bloko-text">Incomplete higher education</span><div class="bloko-columns-row"><div class="bloko-column">2024</div><div class="bloko-column bloko-column_xs-4 bloko-column_s-6 bloko-column_m-7 bloko-column_l-10"><h5>Belarusian National Technical University, Minsk</h5><span>Faculty of Information Technology and Robotics, Information systems and technologies</span></div></div>
+    <div>
+      <span class="bloko-height bloko-text" >Languages</span><br>
+      <span>Russian — Native</span><br>
+      <span>English — B1 — Intermediate</span>
+    </div>
+  </div>
+</div>

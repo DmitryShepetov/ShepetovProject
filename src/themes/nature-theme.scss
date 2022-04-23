@@ -1,0 +1,11 @@
+@use '/node_modules/@angular/material/' as mat;
+
+$sp-nature-primary: mat.define-palette(mat.$brown-palette, 700, 300, 900);
+$sp-nature-accent: mat.define-palette(mat.$deep-purple-palette, 300);
+$sp-nature-warn: mat.define-palette(mat.$red-palette, 600);
+
+$sp-nature-theme: mat.define-light-theme(
+  $sp-nature-primary,
+  $sp-nature-accent,
+  $sp-nature-warn
+);
